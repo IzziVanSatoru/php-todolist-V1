@@ -1,0 +1,11 @@
+CREATE DATABASE todolist_db;
+
+USE todolist_db;
+
+CREATE TABLE tasks (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    is_completed TINYINT(1) DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    ALTER TABLE tasks ADD COLUMN is_completed TINYINT(1) DEFAULT 0;
+);
